@@ -1,0 +1,23 @@
+{
+  "description": "QWATT 1-day live run: simulated Phase 1 bench rig (150 Wp, two DC meters) replayed through the CSV adapter at real-time pace. Each fault window below must appear in ledger/rejected.jsonl with one of its expected reasons.",
+  "label": "Simulated input · assurance A0 · Stellar testnet",
+  "site_id": "qwatt-chispa-01",
+  "node_id": "live-sim",
+  "anchoring": {
+    "network": "testnet",
+    "signers": {
+      "proposer": "GDGTDIZGF5PY5UZHWLLRIF7O3VYR5ZSYBKG5GZOBNOCL7PC44IRQQT5T",
+      "verifier": "GAJCK4PA3CFEZNQD3TLVWWSMHIXGIBV33SIYWZM6CUTMLH7LQKKSYI3U",
+      "third": "GCA6IH2O4N3UOCLTEBEFQ6DA4Y4367G6SWRUTE47Y7VGBHIV64BAMBSD"
+    }
+  },
+  "code_commit": "9ee46466255fb21da12531d0b54e3e451b0fea7e",
+  "seed": 20261103,
+  "days": 1,
+  "run_start": "2026-11-09T20:50:00.000Z",
+  "run_end": "2026-11-10T20:50:00.000Z",
+  "sample_step_s": 10,
+  "interval_s": 300,
+  "faults": [],
+  "published_at": "2026-11-09T20:48:53.954Z"
+}
