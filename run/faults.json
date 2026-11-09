@@ -1,0 +1,112 @@
+{
+  "description": "QWATT seven-day live run: simulated Phase 1 bench rig (150 Wp, two DC meters) replayed through the CSV adapter at real-time pace. Each fault window below must appear in ledger/rejected.jsonl with one of its expected reasons.",
+  "label": "Simulated input · assurance A0 · Stellar testnet",
+  "site_id": "qwatt-chispa-01",
+  "node_id": "live-sim",
+  "anchoring": {
+    "network": "testnet",
+    "signers": {
+      "proposer": "GDGTDIZGF5PY5UZHWLLRIF7O3VYR5ZSYBKG5GZOBNOCL7PC44IRQQT5T",
+      "verifier": "GAJCK4PA3CFEZNQD3TLVWWSMHIXGIBV33SIYWZM6CUTMLH7LQKKSYI3U",
+      "third": "GCA6IH2O4N3UOCLTEBEFQ6DA4Y4367G6SWRUTE47Y7VGBHIV64BAMBSD"
+    }
+  },
+  "code_commit": "9ee46466255fb21da12531d0b54e3e451b0fea7e",
+  "seed": 20261103,
+  "days": 7,
+  "run_start": "2026-11-10T03:00:00.000Z",
+  "run_end": "2026-11-17T03:00:00.000Z",
+  "sample_step_s": 10,
+  "interval_s": 300,
+  "faults": [
+    {
+      "id": "F01-shaded_sensor",
+      "kind": "shaded_sensor",
+      "start": "2026-11-11T16:05:00.000Z",
+      "end": "2026-11-11T16:25:00.000Z",
+      "expect": [
+        "agreement.diverge"
+      ],
+      "solar_elevation_at_start_deg": 72.6,
+      "factor": 0.6
+    },
+    {
+      "id": "F02-disconnected_meter",
+      "kind": "disconnected_meter",
+      "start": "2026-11-12T15:05:00.000Z",
+      "end": "2026-11-12T15:25:00.000Z",
+      "expect": [
+        "agreement.diverge",
+        "agreement.missing_meter"
+      ],
+      "solar_elevation_at_start_deg": 64.2
+    },
+    {
+      "id": "F03-night_injection",
+      "kind": "night_injection",
+      "start": "2026-11-13T04:35:00.000Z",
+      "end": "2026-11-13T04:50:00.000Z",
+      "expect": [
+        "elevation.night"
+      ],
+      "solar_elevation_at_start_deg": -38.6,
+      "watts": 80
+    },
+    {
+      "id": "F04-implausible_ramp",
+      "kind": "implausible_ramp",
+      "start": "2026-11-13T17:35:00.000Z",
+      "end": "2026-11-13T17:40:00.000Z",
+      "expect": [
+        "nameplate.over"
+      ],
+      "solar_elevation_at_start_deg": 69.8,
+      "watts": 400
+    },
+    {
+      "id": "F05-shaded_sensor",
+      "kind": "shaded_sensor",
+      "start": "2026-11-14T17:20:00.000Z",
+      "end": "2026-11-14T17:40:00.000Z",
+      "expect": [
+        "agreement.diverge"
+      ],
+      "solar_elevation_at_start_deg": 72.1,
+      "factor": 0.6
+    },
+    {
+      "id": "F06-disconnected_meter",
+      "kind": "disconnected_meter",
+      "start": "2026-11-15T17:05:00.000Z",
+      "end": "2026-11-15T17:25:00.000Z",
+      "expect": [
+        "agreement.diverge",
+        "agreement.missing_meter"
+      ],
+      "solar_elevation_at_start_deg": 73.9
+    },
+    {
+      "id": "F07-night_injection",
+      "kind": "night_injection",
+      "start": "2026-11-15T04:50:00.000Z",
+      "end": "2026-11-15T05:05:00.000Z",
+      "expect": [
+        "elevation.night"
+      ],
+      "solar_elevation_at_start_deg": -38,
+      "watts": 80
+    },
+    {
+      "id": "F08-implausible_ramp",
+      "kind": "implausible_ramp",
+      "start": "2026-11-16T15:35:00.000Z",
+      "end": "2026-11-16T15:40:00.000Z",
+      "expect": [
+        "nameplate.over"
+      ],
+      "solar_elevation_at_start_deg": 69.9,
+      "watts": 400
+    }
+  ],
+  "published_at": "2026-11-09T22:18:45.637Z"
+}
