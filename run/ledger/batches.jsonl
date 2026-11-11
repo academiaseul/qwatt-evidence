@@ -35,3 +35,4 @@
 {"batch_id":"qwatt-chispa-01-000034","seq":34,"sha256":"4b37ef0275e18bd45c1a6a24e3ec77b2dfce51b5c9e07a844e9da81077d10370","status":"accepted","reasons":[]}
 {"batch_id":"qwatt-chispa-01-000035","seq":35,"sha256":"55f0c82b4570371d2c520132296f8125b6b2ff4ab04fb83c52fc04b13d7c83bf","status":"accepted","reasons":[]}
 {"batch_id":"qwatt-chispa-01-000036","seq":36,"sha256":"9e18ed4d9fa8ad3252d3559eaa018c2ca128ea3c7954791f8a25665cc09fda3f","status":"accepted","reasons":[]}
+{"batch_id":"qwatt-chispa-01-000037","seq":37,"sha256":"c50f4a260c5206cf1b08826971f5c71c4e83fef8d9bb82952f258d0fda381a28","status":"accepted","reasons":[]}
