@@ -1,10 +1,10 @@
 {
-  "latest_batch_id": "qwatt-chispa-01-000097",
-  "latest_seq": 97,
-  "head_sha256": "27ecc39a7d85fa73697f88a20ecdaecf573c97f55b1e95ccce00fed9f70d1ff1",
+  "latest_batch_id": "qwatt-chispa-01-000098",
+  "latest_seq": 98,
+  "head_sha256": "44dcff63450b09e11d33f9643c9b381c2d81f118f6a70e61f7ea50c76adf4c90",
   "cumulative_mwh": 2673839,
   "spec_version": "1.0.0",
   "schema_version": "1.1.0",
-  "last_ts_start": "2026-11-14T04:55:00.000Z",
+  "last_ts_start": "2026-11-14T05:55:00.000Z",
   "site_id": "qwatt-chispa-01"
 }
