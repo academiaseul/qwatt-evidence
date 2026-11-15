@@ -1,0 +1,8 @@
+{
+  "batch_id": "qwatt-chispa-01-000123",
+  "seq": 123,
+  "sha256": "df6fab81bb4abaecf09eade54aaf133d868f5328b103ff7ab733384d52330846",
+  "tx_hash": "76881c2aef9e6f7527968802383ac64bcf30e3967cf2743a0a0ad8c675c8fc2f",
+  "ledger": 5740499,
+  "anchored_at": "2026-11-15T07:02:20Z"
+}
